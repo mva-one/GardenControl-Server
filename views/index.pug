@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  form(action="." method="POST" class="form-registration")
+    label(for="name") Name:
+    input(
+      type="text"
+      id="name"
+      name="name"
+      class="form-control"
+    )
+
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+    )
+
+    input(type="submit" value="Submit" class="btn btn-lg btn-primary btn-block")
