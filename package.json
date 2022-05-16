@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mva-one/GardenControl-Server/issues"
   },
-  "homepage": "https://github.com/mva-one/GardenControl-Server#readme"
+  "homepage": "https://github.com/mva-one/GardenControl-Server#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
