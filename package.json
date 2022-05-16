@@ -1,0 +1,19 @@
+{
+  "name": "gardencontrol-server",
+  "version": "1.0.0",
+  "description": "Brains of the GardenControl System with options to manage, monitor, control and schedule multiple GardenControl-Nodes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mva-one/GardenControl-Server.git"
+  },
+  "author": "github.com/mva-one",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mva-one/GardenControl-Server/issues"
+  },
+  "homepage": "https://github.com/mva-one/GardenControl-Server#readme"
+}
