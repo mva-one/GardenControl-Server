@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    if true
+        table 
+            tr 
+                th NodeID 
+                th Description 
+            each n in nodes 
+                tr 
+                    td= n.nid
+                    td= n.descr 
+    else 
+        p No nodes found.

@@ -105,3 +105,6 @@ dist
 
 # MongoDB database storage
 dbfiles
+
+# Secret things like connection data, passwords
+secret
