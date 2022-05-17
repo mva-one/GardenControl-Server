@@ -18,7 +18,6 @@ router.get('/', (req, res) => {
 });
 
 router.get('/nodes', (req, res) => {
-    // var nodes = [{ nid: 'T1', descr: 'D1' }];
     console.log({title: 'Nodes - Gctl ALPHA', nodes});
     res.render('nodes', {title: 'Nodes - Gctl ALPHA', nodes});
   });

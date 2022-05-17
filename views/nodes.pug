@@ -5,10 +5,12 @@ block content
         table 
             tr 
                 th NodeID 
+                th Host
                 th Description 
             each n in nodes 
                 tr 
                     td= n.nid
+                    td= n.host
                     td= n.descr 
     else 
         p No nodes found.
