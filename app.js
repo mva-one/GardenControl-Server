@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const routes = require('./routes/index');
 
 const app = express();
 
@@ -11,6 +10,10 @@ app.set('view engine', 'pug');
 // use static content in public directory
 app.use(express.static('public'));
 
-app.use('/', routes);
+const indexRouter = require('./routes/index');
+const nodesRouter = require('./routes/nodes');
+
+app.use('/', indexRouter);
+app.use('/nodes', nodesRouter);
 
 module.exports = app;
