@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Brains of the GardenControl System with options to manage, monitor, control and schedule multiple GardenControl-Nodes.",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "watch": "nodemon ./start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/mva-one/GardenControl-Server#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "node-fetch": "^3.2.6",
     "pg": "^8.7.3",
     "pug": "^3.0.2"
   },

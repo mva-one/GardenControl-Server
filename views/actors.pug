@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    if true
+        table 
+            tr 
+                th ActorID 
+                th NodeID
+                th Type
+                th GPIO 
+                th Status 
+                th Invert 
+                th Locked 
+                th Enabled 
+                th Description
+            each a in actors
+                tr 
+                    td= a.aid
+                    td= a.node
+                    td= a.atype 
+                    td= a.gpio 
+                    td= a.stat
+                    td= a.inv
+                    td= a.lock
+                    td= a.enab
+                    td= a.descr
+    else 
+        p No nodes found.
