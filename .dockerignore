@@ -1,0 +1,7 @@
+node_modules
+database
+secret
+npm-debug.log
+Dockerfile
+docker-compose.yaml
+README.md
