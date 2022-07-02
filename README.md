@@ -3,7 +3,7 @@ Brains of the GardenControl System with options to manage, monitor, control and 
 
 This is a very early **ALPHA development version**. Use with caution, I am not responsible for anything it may do to your system! (Actually it can't do much yet... 😅)
 
-## How to install?
+## How to install and run?
 
 1. Install the docker runtime and docker-compose. For Windows, install Docker with WSL2 backend! See here: [Docker with WSL2 installation](https://docs.docker.com/desktop/windows/wsl/)
 2. Run `git clone https://github.com/mva-one/GardenControl-Server.git`
@@ -35,7 +35,7 @@ To stop everything, run `docker-compose down -v` from the same console you start
 
 ### Example
 
-Only the latter two are relevant. Navigate your Browser to http://localhost:3001/actors for example to see the gctl-actors defined in the database. If you do so, the following things happen under the hood:
+Navigate your Browser to http://localhost:3001/actors for example to see the gctl-actors defined in the database. If you do so, the following things happen under the hood:
 1. NodeJS receives the request and processes it in `routes/actor.js`
 2. A GET request is being sent to PostgREST
 3. PostgREST contacts the PostgreSQL database and runs the SQL query, returning a JSON array with the gctl-actors
