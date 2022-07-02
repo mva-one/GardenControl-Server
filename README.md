@@ -6,8 +6,8 @@ This is a very early **ALPHA development version**. Use with caution, I am not r
 ## How to install?
 
 1. Install the docker runtime and docker-compose. For Windows, install Docker with WSL2 backend! See here: [Docker with WSL2 installation](https://docs.docker.com/desktop/windows/wsl/)
-2. Create a Directory for this project and `cd` into it.
-3. Run `git clone git@github.com:mva-one/GardenControl-Server.git`
+2. Run `git clone https://github.com/mva-one/GardenControl-Server.git`
+3. `cd` into the freshly created directory `GardenControl-Server`
 4. Copy `.env.example` to `.env` and make changes if desired
 5. `docker-compose up -d --force-recreate` 🥳
 
