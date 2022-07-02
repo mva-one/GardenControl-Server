@@ -4,11 +4,12 @@ services:
     image: postgrest/postgrest
     ports:
       - "3000:3000"
+    env_file:
+      - ".env"
     environment:
-      PGRST_DB_URI: postgres://postgres:password@db:5432/gctl
-      PGRST_DB_SCHEMAS: gctl
-      PGRST_DB_ANON_ROLE: postgres
-      #PGRST_OPENAPI_SERVER_PROXY_URI: http://127.0.0.1:3000
+      - PGRST_DB_URI
+      - PGRST_DB_SCHEMAS
+      - PGRST_DB_ANON_ROLE
     restart: always
     depends_on:
       - db
@@ -16,9 +17,11 @@ services:
     image: postgres
     ports:
       - "5432:5432"
+    env_file:
+      - ".env"
     environment:
-      POSTGRES_DB: gctl
-      POSTGRES_PASSWORD: password
+      - POSTGRES_DB
+      - POSTGRES_PASSWORD
     volumes:
       - "./database/create_db.sql:/docker-entrypoint-initdb.d/create_db.sql" # create database when postgres container starts
   adminer:
